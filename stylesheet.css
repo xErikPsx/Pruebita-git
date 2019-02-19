@@ -1,0 +1,74 @@
+/* VALORES EN FLEXBOX:
+
+flex-direction: row | column  | row-reverse | column-reveerse
+    el reverse psisiona los elementos al lado contrario del contenedorr 
+    
+flex-wrap: wrap;  Coloca los elementos debajo de de otros (si los elementos son grandes) para que
+    que tengan un modo ordenado  
+flex-warp: no-wrap; Coloca los elementos en una sola fila y modifica su tamaño haciendolos
+    mas pequeños.
+
+flex-flow: row wrap = EL primero valor es el de "flex-direction= y el sgundo
+    valor de "flex-wrap" con cualquier valor de cada uno.
+
+justify-content: flex-start | flex-end | center | space-around  | space-between;
+    Permiente decidir la psisicon de los elemntos y la distribucion que tiene.
+
+aling-items: flex-start | flex-end  | center |  stretch | baseline;
+    Alinea los elementos verticalemte
+
+aling-content: flex-start | flex-end  | center |  stretch | baseline;
+
+"aling-content" recibe los mismos parametros que "aling-items" pero 'aling-content'
+    se utiliza cuando se cuenta con varias filas de elementos,
+
+flex-grow: 1 | n; Este, crece conforme los elementos se van estirando.
+flex-shrink: 1 | n; Este, hace encoger los elementos conforme se van estirando.
+
+
+order:1 | n; Ordena los elementos por número
+
+aling-self: flex-start | flex-end  | center |  stretch | baseline;
+    
+*/
+
+body{
+  margin: 0;
+}
+
+.conteiner{
+  width: 95%;
+  height: 90%;
+  background: #fff;
+  padding: 10px;
+  border: 10px solid #ff0000;
+  margin: 10px;
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+  
+}
+
+/* img{
+    width:200px;
+    height:200px;
+  } */
+
+.element{
+    color: #fff;
+    margin: 5px;
+    flex-basis: 150px; /*Es el equivalente al width dependiendo si son filas o columnas*/
+    background-color: maroon;
+    text-align: center;
+}
+
+img{
+  width:200px;
+  height:200px;
+}
